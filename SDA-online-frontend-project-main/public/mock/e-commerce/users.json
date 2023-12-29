@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "hashed_password",
+    "role": "admin",
+    "ban": false
+  },
+  {
+    "id": 2,
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "password": "hashed_password",
+    "role": "visitor",
+    "ban": false
+  },
+  {
+    "id": 3,
+    "firstName": "David",
+    "lastName": "Johnson",
+    "email": "david.johnson@example.com",
+    "password": "hashed_password",
+    "role": "visitor",
+    "ban": true
+  },
+  {
+    "id": 4,
+    "firstName": "Hala",
+    "lastName": "Alsuwayt",
+    "email": "hala@gmail.com",
+    "password": "1",
+    "role": "admin",
+    "ban": false
+  },
+  {
+    "id": 5,
+    "firstName": "Amal",
+    "lastName": "Alsuwayt",
+    "email": "user@gmail.com",
+    "password": "1",
+    "role": "visitor",
+    "ban": false
+  }
+]

@@ -1,0 +1,103 @@
+@import '/src/styles/app.css';
+.main .best-seller-section {
+  width: 100%;
+}
+.main .best-seller-section .section-title .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--black-color);
+  margin: 1rem auto;
+  z-index: 2;
+}
+.main .best-seller-section .section-content {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .best-seller-section .section-content .single-product {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--card-bg);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+}
+.main .best-seller-section .section-content .single-product:hover {
+  background: var(--card-hover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .best-seller-section .section-content .single-product .img-div {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .best-seller-section .section-content .single-product .img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .best-seller-section .section-content .single-product .img-div:hover img {
+  transform: scale(1.1);
+}
+.main .best-seller-section .section-content .single-product .card-info {
+  padding: 1rem;
+}
+.main .best-seller-section .section-content .single-product .card-info .product-title {
+  color: var(--black-color);
+  font-size: 1.25rem;
+}
+.main .best-seller-section .section-content .single-product .card-info .price {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--grey-text);
+  border-bottom: 1.5px solid var(--grey-text);
+  font-size: 2rem;
+  color: var(--black-color);
+}
+.main .best-seller-section .section-content .single-product .card-info .description {
+  font-size: 13.5px;
+  color: var(--text-color);
+}
+.main .best-seller-section .section-content .single-product .card-controller {
+  padding: 1rem;
+}
+.main .best-seller-section .section-content .single-product .card-controller .btn {
+  margin-top: 1rem;
+  color: var(--white-color);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .best-seller-section .section-content .single-product .card-controller .btn .icon {
+  align-self: center;
+  font-size: 28px;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .section-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-content .single-product {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .section-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-content .single-product {
+    height: auto;
+  }
+}

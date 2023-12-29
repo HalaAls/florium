@@ -1,0 +1,202 @@
+.user-dashboard {
+  display: flex;
+  background-color: var(--white-color-deam);
+  color: var(--text-color);
+  height: 100vh;
+  padding: 4rem 0 2rem;
+}
+.user-dashboard .user-sidebar {
+  width: 250px;
+  background-color: var(--body-color);
+}
+.user-dashboard .user-sidebar a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.user-dashboard .user-sidebar a:hover {
+  background-color: var(--white-color-deam);
+}
+
+.user-dashboard-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+.user-dashboard-container h2 {
+  color: var(--text-color);
+}
+
+.header {
+  background: var(--gradient-color);
+  color: var(--white-color);
+  padding: 10px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+}
+
+.user-information-section {
+  position: relative;
+  display: flex;
+  background-color: var(--white-color-deam);
+  color: var(--text-color);
+  height: 100vh;
+  padding: 4rem 0 2rem;
+}
+.user-information-section .user-sidebar {
+  width: 250px;
+  background-color: var(--body-color);
+}
+.user-information-section .user-sidebar a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.user-information-section .user-sidebar a:hover {
+  background-color: var(--white-color-deam);
+}
+.user-information-section .user-dashboard-container {
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+}
+.user-information-section .user-dashboard-container .user-dashboard-container__title {
+  color: var(--primary-color);
+}
+.user-information-section .user-dashboard-container .user-edit-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: var(--white-color);
+  padding: 20px;
+  border: 1px solid var(--grey-text);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 750px;
+}
+.user-information-section .user-dashboard-container .user-edit-form .form__label {
+  color: var(--text-color);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+.user-information-section .user-dashboard-container .user-edit-form .validation-error {
+  color: var(--primary-color);
+}
+.user-information-section .user-dashboard-container .user-edit-form .form__input {
+  background-color: var(--input-color);
+  color: var(--black-color);
+  border: 1px solid var(--input-color);
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.user-information-section .user-dashboard-container .user-edit-form .form__input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+.user-information-section .user-dashboard-container .user-edit-form textarea.form__input {
+  height: 80px;
+}
+.user-information-section .user-dashboard-container .user-edit-form #buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.user-information-section .user-dashboard-container .user-edit-form #user__save__button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.user-information-section .user-dashboard-container .user-edit-form #user__save__button:hover {
+  background-color: var(--secondary-color);
+}
+.user-information-section .user-dashboard-container .user-edit-form #user__close__button {
+  background-color: var(--card-hover);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.user-information-section .user-dashboard-container .user-edit-form #user__close__button:hover {
+  background-color: var(--add-button);
+  color: var(--white-color);
+}
+@media only screen and (max-width: 768px) {
+  .user-information-section .user-dashboard-container .user-edit-form {
+    width: 100%;
+    max-width: none;
+  }
+}
+.user-information-section .user-dashboard-container .user-container .user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user-img img {
+  width: 200px;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user-img .user__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user-img .user__details h2,
+.user-information-section .user-dashboard-container .user-container .user-card .user-img .user__details h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user__details h2,
+.user-information-section .user-dashboard-container .user-container .user-card .user__details h3,
+.user-information-section .user-dashboard-container .user-container .user-card .user__details img {
+  background-color: var(--white-color);
+  padding: 8px;
+  border: 1px solid var(--input-color);
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user__controls #update__button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.user-information-section .user-dashboard-container .user-container .user-card .user__controls #update__button:hover {
+  background-color: var(--secondary-color);
+}
+@media only screen and (max-width: 768px) {
+  .user-information-section .user-dashboard-container .user-container .user-card .user-img,
+  .user-information-section .user-dashboard-container .user-container .user-card .user__details,
+  .user-information-section .user-dashboard-container .user-container .user-card .user__controls {
+    margin-top: 10px;
+  }
+}

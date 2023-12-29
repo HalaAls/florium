@@ -1,0 +1,107 @@
+/* @import '../variables.css';
+.main-products-section {
+  margin-top: 100px;
+}
+.main-products-header {
+  text-align: center;
+}
+.main__products-container {
+  display: flex;
+}
+.products-filtering-sidebar {
+  margin: 20px 10px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-height:700px ;
+  background-color: var(--primary-color);
+}
+.filter-by-category,
+.filter-by-price {
+  display: flex;
+  flex-direction: column;
+}
+.filter__lable {
+  text-align: left;
+}
+.filter-category-list,
+.filter-price-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filter__value:hover {
+  background-color: var(--basic-color);
+  color: var(--light-basic-color);
+  border-radius: 5px;
+}
+.products-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card-container {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px 1px 2px var(--primary-color);
+  border-radius: 5px;
+  margin: 0px 10px 25px 10px;
+  display: flex;
+  justify-content: center;
+}
+.product-card-container:hover {
+  transform: scale(1.05);
+}
+.product__card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  width: 300px;
+}
+.product__card-img img {
+  width: auto;
+  height: 250px;
+}
+.product__card-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.product__name {
+  color: var(--font-color);
+}
+.product__price {
+  color: var(--font-color);
+}
+.product__link {
+  text-decoration: none;
+}
+.product__card-controls {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.product__card-controls .shop__button {
+  background-color: transparent;
+  border: none;
+  font-size: var(--button-font);
+  color: var(--basic-color);
+}
+.product__card-controls .shop__button:hover {
+  opacity: 0.9;
+  transform: scale(1.08);
+}
+@media (max-width: 768px) {
+  .main-products-section {
+    margin-top: 50px; 
+  }
+
+  .main__products-container {
+    flex-direction: column; 
+  }
+
+  .products-filtering-sidebar {
+    margin: 10px;
+    padding: 10px;
+    max-height: unset; 
+  }
+} */
