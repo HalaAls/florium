@@ -1,0 +1,9 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/SDA-online-frontend-project/styles"
+    }
+  ]
+}
